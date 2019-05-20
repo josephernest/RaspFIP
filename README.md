@@ -1,6 +1,8 @@
 RaspFIP
 =======
 
+![](https://upload.wikimedia.org/wikipedia/commons/archive/5/50/20131010030407%21FIP_logo.png)
+
 Soyons clairs : [FIP](http://fipradio.fr/player) est l'une des meilleures radios en France (merci Radio France) à écouter pendant des heures sans se lasser, par exemple quand on travaille : peu de distraction en parole (une ou deux fois par heure et avec des voix qui font la [réputation de la station](https://fr.wikipedia.org/wiki/FIP_(radio)#1971_-_1972_:_cr%C3%A9ation_d'une_radio_atypique)), et surtout de la musique. Et de la bonne musique - on peut passer en 15 minutes d'un jazz hyper pointu à une nouveauté indie-pop (qu'on a juste envie de Shazamer pour découvrir l'album), et avoir ensuite du J.S. Bach suivi par du hip-hop. Les années étudiantes où j'écoutais beaucoup FIP je découvrais des nouveaux albums chouettes toutes les semaines.
 
 Seul problème : la station émet en FM à Paris (105.1 Mhz), Strasbourg (92.3 Mhz), Bordeaux, et cinq ou six grandes villes, mais pas ailleurs. Pendant longtemps j'ouvrais un onglet dans le browser à la page [FIP](http://fipradio.fr/player), mais après il faut brancher son laptop à des haut-parleurs pour avoir un bon son ou alors se connecter via Bluetooth, de même on peut utilise l'app FIP sur téléphone, mais finalement, son téléphone est occupé par ça, et j'ai remarqué *qu'à l'usage*, **le fait d'avoir *plusieurs actions à faire* pour démarrer la radio** faisait que je l'écoutais moins souvent que quand j'étais dans une ville couverte en FM, **où il suffisait d'appuyer sur ON** sur son "poste de radio".
@@ -69,10 +71,10 @@ Ca se fait en quelques étapes simples en 15 minutes qu'on fait seulement une fo
 
     On termine ensuite avec:
 
-    sudo systemctl enable radio
-    sudo alsamixer     # mettre le volume au max ici une fois pour toutes, et on quitte avec F4
-    sudo alsactl store
-    sudo reboot
+        sudo systemctl enable radio
+        sudo alsamixer     # mettre le volume au max ici une fois pour toutes, et on quitte avec F4
+        sudo alsactl store
+        sudo reboot
 
 * Voilà ! Désormais il suffit d'allumer le Pi (branché avec prise la jack sur des haut-parleurs) et ça démarre. 
 
