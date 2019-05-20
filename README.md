@@ -9,6 +9,8 @@ Seul problème : la station émet en FM à Paris (105.1 Mhz), Strasbourg (92.3 M
 
 Comme dans la plupart de mes projets open-source (exemple [celui-ci](https://github.com/josephernest/Yopp)) où je suis convaincu que **le taux d'utilisation au quotidien d'un outil donné est inversement proportionnel au nombre d'actions nécessaires**, j'ai cherché une solution où je peux démarrer cette radio en UNE SEULE ACTION.
 
+![](https://i.imgur.com/WdkPj3tm.jpg)
+
 Voici donc : **RaspFIP - Un FIP player sur Raspberry Pi**. Il existe sans-doute des centaines de media player sur Raspberry Pi, mais j'ai cherché à faire un truc simple et qui fait qu'une seule chose : 
 
 * au boot ça démarre la radio FIP, 
