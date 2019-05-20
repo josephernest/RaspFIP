@@ -28,7 +28,7 @@ Ca se fait en quelques étapes simples en 15 minutes qu'on fait seulement une fo
 
 * Avoir un Raspberry Pi sous la main (RPi 3 ou RPi 2 avec un dongle Wifi)
 
-* Télécharger une Raspbian Strech Lite [ici](https://www.raspberrypi.org/downloads/raspbian/) et le mettre sur une carte micro SD de 2 Go au moins avec [Win32Diskimager](https://sourceforge.net/projects/win32diskimager/) ou Etcher (qui a le bon goût de fonctionner avec des images zippées)
+* Télécharger une Raspbian Strech Lite [ici](https://www.raspberrypi.org/downloads/raspbian/) et le mettre sur une carte micro SD de 2 Go au moins avec [Win32Diskimager](https://sourceforge.net/projects/win32diskimager/) ou [Etcher](https://www.balena.io/etcher/) (qui a le bon goût de fonctionner avec des images zippées)
 
 * Ouvrir la partition `boot` (visible depuis Windows) et créer deux fichiers :
 
@@ -44,7 +44,7 @@ Ca se fait en quelques étapes simples en 15 minutes qu'on fait seulement une fo
                 psk="1f0c1164b05329ac382a"
             }
 
-* On met la carte micro SD dans le Raspberry Pi et on le boote, ensuite on se connecte en SSH, par exemple avec `putty.exe` sous Windows :
+* On met la carte micro SD dans le Raspberry Pi et on le boote, ensuite on se connecte en SSH, par exemple avec [`putty.exe`](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe) sous Windows :
 
         D:\tools\putty.exe pi@192.168.1.48 -pw raspberry
 
@@ -78,6 +78,6 @@ Ca se fait en quelques étapes simples en 15 minutes qu'on fait seulement une fo
         sudo alsactl store
         sudo reboot
 
-* Voilà ! Désormais il suffit d'allumer le Pi (branché avec prise la jack sur des haut-parleurs) et ça démarre. 
+* Voilà ! Désormais il suffit d'allumer le Pi (branché avec prise la jack sur des haut-parleurs ou ampli) et ça démarre. 
 
-NB : *"Eteindre un Pi en enlevant le courant ça se fait pas"*. Certes, mais je le fais depuis plusieurs années, aucun problème jusque là. Au pire je changerai la carte micro SD un jour si nécessaire. (J'avais testé un jour de configurer pour monter le filesystem en `read-only` pour éviter les problèmes éventuels, mais ça ne fonctionnait pas, car le DHCP ou la connection Wifi a besoin d'écrire à un moment je crois ?)
+PS : *"Eteindre un Pi en enlevant le courant ça se fait pas"*. Certes, mais je le fais depuis plusieurs années, aucun problème jusque là. Au pire je changerai la carte micro SD un jour si nécessaire. (J'avais testé un jour de configurer pour monter le filesystem en `read-only` pour éviter les problèmes éventuels, mais ça ne fonctionnait pas, car le DHCP ou la connection Wifi a besoin d'écrire à un moment je crois ?)
