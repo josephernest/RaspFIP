@@ -5,7 +5,7 @@ RaspFIP
 
 Soyons clairs : [FIP](http://fipradio.fr/player) est l'une des meilleures radios en France (merci Radio France) à écouter pendant des heures sans se lasser, par exemple quand on travaille : peu de distraction en parole (une ou deux fois par heure et avec des voix qui font la [réputation de la station](https://fr.wikipedia.org/wiki/FIP_(radio)#1971_-_1972_:_cr%C3%A9ation_d'une_radio_atypique)), et surtout de la musique. Et de la bonne musique - on peut passer en 15 minutes d'un jazz hyper pointu à une nouveauté indie-pop (qu'on a juste envie de Shazamer pour découvrir l'album), et avoir ensuite du J.S. Bach suivi par du hip-hop. Les années étudiantes où j'écoutais beaucoup FIP je découvrais des nouveaux albums chouettes toutes les semaines.
 
-Seul problème : la station émet en FM à Paris (105.1 Mhz), Strasbourg (92.3 Mhz), Bordeaux, et cinq ou six grandes villes, mais pas ailleurs. Pendant longtemps j'ouvrais un onglet dans le browser à la page [FIP](http://fipradio.fr/player), mais après il faut brancher son laptop à des haut-parleurs pour avoir un bon son ou alors se connecter via Bluetooth, de même on peut utilise l'app FIP sur téléphone, mais finalement, son téléphone est occupé par ça, et j'ai remarqué *qu'à l'usage*, **le fait d'avoir *plusieurs actions à faire* pour démarrer la radio** faisait que je l'écoutais moins souvent que quand j'étais dans une ville couverte en FM, **où il suffisait d'appuyer sur ON** sur son "poste de radio".
+Seul problème : la station émet en FM à Paris (105.1 Mhz), Strasbourg (92.3 Mhz), Bordeaux, et cinq ou six grandes villes, mais pas ailleurs. Pendant longtemps j'ouvrais un onglet dans le browser à la page [FIP](http://fipradio.fr/player), mais après il faut brancher son laptop à des haut-parleurs pour avoir un bon son ou alors se connecter via Bluetooth, de même on peut utiliser l'app FIP sur téléphone, mais finalement, son téléphone est occupé par ça, et j'ai remarqué *qu'à l'usage*, **le fait d'avoir *plusieurs actions à faire* pour démarrer la radio** faisait que je l'écoutais moins souvent que quand j'étais dans une ville couverte en FM, **où il suffisait d'appuyer sur ON** sur son "poste de radio".
 
 Comme dans la plupart de mes projets open-source (exemple [celui-ci](https://github.com/josephernest/Yopp)) où je suis convaincu que **le taux d'utilisation au quotidien d'un outil donné est inversement proportionnel au nombre d'actions nécessaires**, j'ai cherché une solution où je peux démarrer cette radio en UNE SEULE ACTION.
 
@@ -13,13 +13,13 @@ Comme dans la plupart de mes projets open-source (exemple [celui-ci](https://git
 
 Voici donc : **RaspFIP - Un FIP player sur Raspberry Pi**. Il existe sans-doute des centaines de media player sur Raspberry Pi, mais j'ai cherché à faire un truc simple et qui fait qu'une seule chose : 
 
-* au boot ça démarre la radio FIP, 
-* et quand on veut éteindre on coupe l'alim et c'est tout,
+* au boot ça démarre automatiquement la radio FIP...
+* ... et quand on veut éteindre on coupe l'alim et c'est tout,
 * pas d'écran ni de clavier ni de souris nécessaire
 
-L'utilisation est donc la suivante : quand on arrive dans la pièce, on appuie sur ON sur sa multiprise, et 10 secondes plus tard, la radio démarre. Rien d'autre à faire.
+L'utilisation est donc la suivante : quand on arrive dans la pièce, on appuie sur ON sur sa multiprise, et 10 secondes plus tard, la radio démarre (Raspberry Pi branché une fois pour toutes sur un ampli ou chaîne Hifi ou haut-parleurs). Rien d'autre à faire.
 
-Après quelques années d'utilisation, je constate qu'avec cette méthode j'écoute à nouveau cette radio autant que quand j'avais juste à allumer ma radio FM (dans une ville couverte en FM).
+Après quelques années d'utilisation, je constate qu'avec cette méthode j'écoute à nouveau cette radio autant que quand j'avais juste à allumer ma radio FM calée sur la bonne fréquence (dans une ville couverte en FM).
 
 Comment faire une RaspFIP ?
 ===========================
